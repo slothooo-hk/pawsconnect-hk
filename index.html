@@ -54,10 +54,10 @@
             opacity: 0.8;
         }
 
-        /* Hero Section - NOW WITH BACKGROUND IMAGE */
+        /* Hero Section - Updated with lighter overlay */
         .hero {
-            background: linear-gradient(rgba(78, 205, 196, 0.85), rgba(68, 160, 141, 0.85)),
-                        url('https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=1600&h=800&fit=crop') center/cover;
+            background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.4)),
+                        url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=1600&h=800&fit=crop') center/cover;
             color: white;
             padding: 5rem 5%;
             text-align: center;
@@ -70,13 +70,20 @@
         .hero h1 {
             font-size: 3.5rem;
             margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            color: white;
         }
 
         .hero p {
             font-size: 1.4rem;
             margin-bottom: 2rem;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            color: white;
+        }
+
+        .hero .btn {
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
         }
 
         .stats {
@@ -89,7 +96,7 @@
 
         .stat-item {
             text-align: center;
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(78, 205, 196, 0.3);
             padding: 1.5rem;
             border-radius: 10px;
             backdrop-filter: blur(10px);
@@ -98,6 +105,13 @@
         .stat-number {
             font-size: 2.5rem;
             font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .stat-item div:last-child {
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
         }
 
         /* Feature Flipcards Section */
@@ -151,21 +165,53 @@
             justify-content: center;
             align-items: center;
             padding: 2rem;
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Individual flipcard backgrounds with transparent black overlay */
+        .flipcard:nth-child(1) .flipcard-front {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                        url('https://images.unsplash.com/photo-1415369629372-26f2fe60c467?w=600&h=600&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .flipcard:nth-child(2) .flipcard-front {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                        url('https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=600&h=600&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .flipcard:nth-child(3) .flipcard-front {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                        url('https://images.unsplash.com/photo-1444212477490-ca407925329e?w=600&h=600&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .flipcard:nth-child(4) .flipcard-front {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                        url('https://images.unsplash.com/photo-1560807707-8cc77767d783?w=600&h=600&fit=crop');
+            background-size: cover;
+            background-position: center;
         }
 
         .flipcard-front {
-            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
             color: white;
         }
 
         .flipcard-front i {
             font-size: 4rem;
             margin-bottom: 1rem;
+            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5));
         }
 
         .flipcard-front h3 {
             font-size: 1.8rem;
             text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
 
         .flipcard-back {
@@ -254,7 +300,8 @@
         .pet-image {
             width: 100%;
             height: 250px;
-            background: linear-gradient(135deg, #FFE66D 0%, #FFC93C 100%);
+            background-size: cover;
+            background-position: center;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -285,7 +332,7 @@
 
         .btn {
             display: inline-block;
-            padding: 0.8rem 2rem;
+            padding: 0.8rem 1.8rem;
             background: #FF8C42;
             color: white;
             text-decoration: none;
@@ -358,9 +405,9 @@
             color: #666;
         }
 
-        /* Business Sponsorship Section */
+        /* Business Sponsorship Section - Updated to tiffany blue */
         .sponsorship-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
             color: white;
             padding: 4rem 5%;
             margin: 3rem 0;
@@ -405,6 +452,20 @@
 
         .sponsorship-card h3 {
             margin-bottom: 1rem;
+        }
+
+        /* Benefits list styling */
+        .benefits-list {
+            text-align: left;
+            max-width: 600px;
+            margin: 2rem auto;
+            font-size: 1.1rem;
+            line-height: 2.2;
+        }
+
+        .benefits-list li {
+            margin-bottom: 0.8rem;
+            padding-left: 0.5rem;
         }
 
         /* Modal */
@@ -495,11 +556,11 @@
 
     <!-- HOME PAGE -->
     <div id="home" class="page">
-        <!-- Hero Section with Real Photo Background -->
+        <!-- Hero Section with lighter overlay and clean photo -->
         <div class="hero">
             <h1><i class="fas fa-paw"></i> PawsConnect HK</h1>
             <p>Connecting Hong Kong Pets with Loving Homes</p>
-            <button class="btn" onclick="showPage('browse')">Find Your New Best Friend</button>
+            <button class="btn" onclick="showPage('browse')">Find Your Pet</button>
 
             <div class="stats">
                 <div class="stat-item">
@@ -517,7 +578,7 @@
             </div>
         </div>
 
-        <!-- Feature Flipcards Section -->
+        <!-- Feature Flipcards Section with relevant photos -->
         <div class="feature-cards-section">
             <h2>Explore PawsConnect HK</h2>
 
@@ -650,7 +711,7 @@
         </div>
     </div>
 
-    <!-- BUSINESS SPONSORSHIP PAGE (NEW!) -->
+    <!-- BUSINESS SPONSORSHIP PAGE -->
     <div id="sponsorship" class="page hidden">
         <div class="sponsorship-section">
             <h2><i class="fas fa-handshake"></i> Business Sponsorship Opportunities</h2>
@@ -676,16 +737,10 @@
                         <h3>Financial Support</h3>
                         <p>Sponsor specific programs or general operating costs</p>
                     </div>
-
-                    <div class="sponsorship-card">
-                        <i class="fas fa-ad"></i>
-                        <h3>Digital Advertising</h3>
-                        <p>Promote your pet-related business to engaged adopters</p>
-                    </div>
                 </div>
 
-                <h3 style="margin-top: 3rem; margin-bottom: 1rem;">Benefits of Sponsorship</h3>
-                <ul style="text-align: left; max-width: 600px; margin: 0 auto; font-size: 1.1rem; line-height: 2;">
+                <h3 style="margin-top: 3rem; margin-bottom: 1.5rem;">Benefits of Sponsorship</h3>
+                <ul class="benefits-list">
                     <li>Recognition on PawsConnect HK platform</li>
                     <li>Logo featured on partner organization materials</li>
                     <li>CSR story for marketing and PR</li>
@@ -693,7 +748,7 @@
                     <li>Tax-deductible donations (where applicable)</li>
                 </ul>
 
-                <button class="btn" style="margin-top: 2rem; background: white; color: #667eea;" onclick="alert('Thank you for your interest! Our partnerships team will contact you at partnerships@pawsconnect.hk')">Become a Sponsor</button>
+                <button class="btn" style="margin-top: 2rem; background: white; color: #4ECDC4;" onclick="alert('Thank you for your interest! Our partnerships team will contact you at partnerships@pawsconnect.hk')">Become a Sponsor</button>
             </div>
         </div>
 
@@ -773,20 +828,20 @@
     </footer>
 
     <script>
-        // Pet data
+        // Pet data with stock photos
         const pets = [
-            {name: "Max", species: "Dog", breed: "Golden Retriever Mix", age: "3 years", size: "Large", gender: "Male", location: "Hong Kong Island", organization: "SPCA", personality: "Friendly, energetic, loves children", description: "Max is a sweet golden boy who loves playing fetch and going for long walks.", icon: "🐕"},
-            {name: "Luna", species: "Cat", breed: "Domestic Shorthair", age: "2 years", size: "Small", gender: "Female", location: "New Territories", organization: "LAP", personality: "Gentle, quiet, independent", description: "Luna is a calm and affectionate cat who enjoys sunbathing.", icon: "🐱"},
-            {name: "Charlie", species: "Dog", breed: "Corgi", age: "5 years", size: "Medium", gender: "Male", location: "Kowloon", organization: "HKDR", personality: "Playful, smart, loyal", description: "Charlie is an adorable corgi with a big personality.", icon: "🐕"},
-            {name: "Bella", species: "Cat", breed: "Persian Mix", age: "4 years", size: "Medium", gender: "Female", location: "Hong Kong Island", organization: "LAP", personality: "Affectionate, calm", description: "Bella is a beautiful long-haired cat seeking a loving home.", icon: "🐱"},
-            {name: "Rocky", species: "Dog", breed: "Terrier Mix", age: "1 year", size: "Small", gender: "Male", location: "New Territories", organization: "SKSF", personality: "Energetic, curious", description: "Rocky is a young pup full of energy and love.", icon: "🐕"},
-            {name: "Mimi", species: "Cat", breed: "Tabby", age: "6 months", size: "Small", gender: "Female", location: "Kowloon", organization: "SPCA", personality: "Playful, social", description: "Mimi is an adorable kitten who loves playing with toys.", icon: "🐱"},
-            {name: "Duke", species: "Dog", breed: "Labrador", age: "7 years", size: "Large", gender: "Male", location: "Hong Kong Island", organization: "HK Paws", personality: "Gentle, senior", description: "Duke is a sweet senior dog looking for a peaceful home.", icon: "🐕"},
-            {name: "Whiskers", species: "Cat", breed: "Siamese Mix", age: "3 years", size: "Medium", gender: "Male", location: "New Territories", organization: "LAP", personality: "Vocal, affectionate", description: "Whiskers loves to chat with his humans!", icon: "🐱"},
-            {name: "Daisy", species: "Dog", breed: "Beagle", age: "4 years", size: "Medium", gender: "Female", location: "Kowloon", organization: "HKDR", personality: "Friendly, curious", description: "Daisy is a happy beagle who loves sniffing adventures.", icon: "🐕"},
-            {name: "Shadow", species: "Cat", breed: "Black Shorthair", age: "5 years", size: "Medium", gender: "Male", location: "Hong Kong Island", organization: "Bring Me Home", personality: "Shy, sweet", description: "Shadow needs patience but is incredibly loving.", icon: "🐱"},
-            {name: "Buddy", species: "Dog", breed: "Shih Tzu", age: "2 years", size: "Small", gender: "Male", location: "Kowloon", organization: "SPCA", personality: "Lap dog, affectionate", description: "Buddy is perfect for apartment living.", icon: "🐕"},
-            {name: "Coco", species: "Cat", breed: "Calico", age: "1 year", size: "Small", gender: "Female", location: "New Territories", organization: "LAP", personality: "Independent, playful", description: "Coco has a big personality and loves toys.", icon: "🐱"}
+            {name: "Max", species: "Dog", breed: "Golden Retriever Mix", age: "3 years", size: "Large", gender: "Male", location: "Hong Kong Island", organization: "SPCA", personality: "Friendly, energetic, loves children", description: "Max is a sweet golden boy who loves playing fetch and going for long walks.", photo: "https://images.unsplash.com/photo-1633722715463-d30f4f325e24?w=400&h=400&fit=crop"},
+            {name: "Luna", species: "Cat", breed: "Domestic Shorthair", age: "2 years", size: "Small", gender: "Female", location: "New Territories", organization: "LAP", personality: "Gentle, quiet, independent", description: "Luna is a calm and affectionate cat who enjoys sunbathing.", photo: "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400&h=400&fit=crop"},
+            {name: "Charlie", species: "Dog", breed: "Corgi", age: "5 years", size: "Medium", gender: "Male", location: "Kowloon", organization: "HKDR", personality: "Playful, smart, loyal", description: "Charlie is an adorable corgi with a big personality.", photo: "https://images.unsplash.com/photo-1546527868-ccb7ee7dfa6a?w=400&h=400&fit=crop"},
+            {name: "Bella", species: "Cat", breed: "Persian Mix", age: "4 years", size: "Medium", gender: "Female", location: "Hong Kong Island", organization: "LAP", personality: "Affectionate, calm", description: "Bella is a beautiful long-haired cat seeking a loving home.", photo: "https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?w=400&h=400&fit=crop"},
+            {name: "Rocky", species: "Dog", breed: "Terrier Mix", age: "1 year", size: "Small", gender: "Male", location: "New Territories", organization: "SKSF", personality: "Energetic, curious", description: "Rocky is a young pup full of energy and love.", photo: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&h=400&fit=crop"},
+            {name: "Mimi", species: "Cat", breed: "Tabby", age: "6 months", size: "Small", gender: "Female", location: "Kowloon", organization: "SPCA", personality: "Playful, social", description: "Mimi is an adorable kitten who loves playing with toys.", photo: "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=400&h=400&fit=crop"},
+            {name: "Duke", species: "Dog", breed: "Labrador", age: "7 years", size: "Large", gender: "Male", location: "Hong Kong Island", organization: "HK Paws", personality: "Gentle, senior", description: "Duke is a sweet senior dog looking for a peaceful home.", photo: "https://images.unsplash.com/photo-1552053831-71594a27632d?w=400&h=400&fit=crop"},
+            {name: "Whiskers", species: "Cat", breed: "Siamese Mix", age: "3 years", size: "Medium", gender: "Male", location: "New Territories", organization: "LAP", personality: "Vocal, affectionate", description: "Whiskers loves to chat with his humans!", photo: "https://images.unsplash.com/photo-1615789591457-74a63395c990?w=400&h=400&fit=crop"},
+            {name: "Daisy", species: "Dog", breed: "Beagle", age: "4 years", size: "Medium", gender: "Female", location: "Kowloon", organization: "HKDR", personality: "Friendly, curious", description: "Daisy is a happy beagle who loves sniffing adventures.", photo: "https://images.unsplash.com/photo-1505628346881-b72b27e84530?w=400&h=400&fit=crop"},
+            {name: "Shadow", species: "Cat", breed: "Black Shorthair", age: "5 years", size: "Medium", gender: "Male", location: "Hong Kong Island", organization: "Bring Me Home", personality: "Shy, sweet", description: "Shadow needs patience but is incredibly loving.", photo: "https://images.unsplash.com/photo-1529778873920-4da4926a72c2?w=400&h=400&fit=crop"},
+            {name: "Buddy", species: "Dog", breed: "Shih Tzu", age: "2 years", size: "Small", gender: "Male", location: "Kowloon", organization: "SPCA", personality: "Lap dog, affectionate", description: "Buddy is perfect for apartment living.", photo: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=400&h=400&fit=crop"},
+            {name: "Coco", species: "Cat", breed: "Calico", age: "1 year", size: "Small", gender: "Female", location: "New Territories", organization: "LAP", personality: "Independent, playful", description: "Coco has a big personality and loves toys.", photo: "https://images.unsplash.com/photo-1494256997604-768d1f608cac?w=400&h=400&fit=crop"}
         ];
 
         const volunteers = [
@@ -816,7 +871,7 @@
             displayOrganizations();
         }
 
-        // Display pets
+        // Display pets with stock photos
         function displayPets(petsToShow) {
             const grid = document.getElementById('petGrid');
             grid.innerHTML = '';
@@ -826,7 +881,7 @@
                 card.className = 'pet-card';
                 card.onclick = () => showPetDetails(index);
                 card.innerHTML = `
-                    <div class="pet-image">${pet.icon}</div>
+                    <div class="pet-image" style="background-image: url('${pet.photo}')"></div>
                     <div class="pet-info">
                         <div class="pet-name">${pet.name}</div>
                         <div class="pet-details">${pet.breed} • ${pet.age}</div>
@@ -863,7 +918,9 @@
             const body = document.getElementById('modalBody');
 
             body.innerHTML = `
-                <div style="text-align: center; font-size: 5rem; margin-bottom: 1rem;">${pet.icon}</div>
+                <div style="text-align: center; margin-bottom: 1rem;">
+                    <img src="${pet.photo}" style="max-width: 400px; width: 100%; border-radius: 10px;">
+                </div>
                 <h2 style="color: #FF6B6B; text-align: center;">${pet.name}</h2>
                 <p style="text-align: center; color: #4ECDC4; font-size: 1.2rem; margin-bottom: 2rem;">${pet.organization}</p>
 
