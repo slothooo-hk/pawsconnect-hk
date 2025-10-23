@@ -3,135 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PawsConnect HK - Connecting Hong Kong Pets with Loving Homes</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>PawsConnect HK - Pet Adoption Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root {
-            /* Primitive Color Tokens */
-            --color-white: rgba(255, 255, 255, 1);
-            --color-black: rgba(0, 0, 0, 1);
-            --color-cream-50: rgba(252, 252, 249, 1);
-            --color-cream-100: rgba(255, 255, 253, 1);
-            --color-gray-200: rgba(245, 245, 245, 1);
-            --color-gray-300: rgba(167, 169, 169, 1);
-            --color-gray-400: rgba(119, 124, 124, 1);
-            --color-slate-500: rgba(98, 108, 113, 1);
-            --color-brown-600: rgba(94, 82, 64, 1);
-            --color-charcoal-700: rgba(31, 33, 33, 1);
-            --color-charcoal-800: rgba(38, 40, 40, 1);
-            --color-slate-900: rgba(19, 52, 59, 1);
-            --color-teal-300: rgba(50, 184, 198, 1);
-            --color-teal-400: rgba(45, 166, 178, 1);
-            --color-teal-500: rgba(33, 128, 141, 1);
-            --color-teal-600: rgba(29, 116, 128, 1);
-            --color-teal-700: rgba(26, 104, 115, 1);
-            --color-teal-800: rgba(41, 150, 161, 1);
-            --color-red-400: rgba(255, 84, 89, 1);
-            --color-red-500: rgba(192, 21, 47, 1);
-            --color-orange-400: rgba(230, 129, 97, 1);
-            --color-orange-500: rgba(168, 75, 47, 1);
-
-            /* Custom colors for PawsConnect */
-            --color-primary-orange: #FF8C42;
-            --color-primary-teal: #4ECDC4;
-            --color-background-light: #F7F7F7;
-            
-            /* RGB versions for opacity control */
-            --color-brown-600-rgb: 94, 82, 64;
-            --color-teal-500-rgb: 33, 128, 141;
-            --color-slate-900-rgb: 19, 52, 59;
-            --color-slate-500-rgb: 98, 108, 113;
-            --color-red-500-rgb: 192, 21, 47;
-            --color-red-400-rgb: 255, 84, 89;
-            --color-orange-500-rgb: 168, 75, 47;
-            --color-orange-400-rgb: 230, 129, 97;
-
-            /* Background color tokens (Light Mode) */
-            --color-bg-1: rgba(59, 130, 246, 0.08);
-            --color-bg-2: rgba(245, 158, 11, 0.08);
-            --color-bg-3: rgba(34, 197, 94, 0.08);
-            --color-bg-4: rgba(239, 68, 68, 0.08);
-            --color-bg-5: rgba(147, 51, 234, 0.08);
-            --color-bg-6: rgba(249, 115, 22, 0.08);
-            --color-bg-7: rgba(236, 72, 153, 0.08);
-            --color-bg-8: rgba(6, 182, 212, 0.08);
-
-            /* Semantic Color Tokens (Light Mode) */
-            --color-background: var(--color-background-light);
-            --color-surface: var(--color-cream-100);
-            --color-text: var(--color-slate-900);
-            --color-text-secondary: var(--color-slate-500);
-            --color-primary: var(--color-primary-teal);
-            --color-primary-hover: var(--color-teal-600);
-            --color-primary-active: var(--color-teal-700);
-            --color-secondary: rgba(var(--color-brown-600-rgb), 0.12);
-            --color-secondary-hover: rgba(var(--color-brown-600-rgb), 0.2);
-            --color-secondary-active: rgba(var(--color-brown-600-rgb), 0.25);
-            --color-border: rgba(var(--color-brown-600-rgb), 0.2);
-            --color-btn-primary-text: var(--color-white);
-            --color-card-border: rgba(var(--color-brown-600-rgb), 0.12);
-            --color-card-border-inner: rgba(var(--color-brown-600-rgb), 0.12);
-            --color-error: var(--color-red-500);
-            --color-success: var(--color-teal-500);
-            --color-warning: var(--color-orange-500);
-            --color-info: var(--color-slate-500);
-            --color-focus-ring: rgba(var(--color-teal-500-rgb), 0.4);
-            --color-select-caret: rgba(var(--color-slate-900-rgb), 0.8);
-
-            /* Typography */
-            --font-family-base: "Open Sans", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            --font-family-heading: "Poppins", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            --font-size-xs: 11px;
-            --font-size-sm: 12px;
-            --font-size-base: 14px;
-            --font-size-md: 14px;
-            --font-size-lg: 16px;
-            --font-size-xl: 18px;
-            --font-size-2xl: 20px;
-            --font-size-3xl: 24px;
-            --font-size-4xl: 30px;
-            --font-weight-normal: 400;
-            --font-weight-medium: 500;
-            --font-weight-semibold: 550;
-            --font-weight-bold: 600;
-            --line-height-tight: 1.2;
-            --line-height-normal: 1.5;
-            --letter-spacing-tight: -0.01em;
-
-            /* Spacing */
-            --space-0: 0;
-            --space-1: 1px;
-            --space-2: 2px;
-            --space-4: 4px;
-            --space-6: 6px;
-            --space-8: 8px;
-            --space-10: 10px;
-            --space-12: 12px;
-            --space-16: 16px;
-            --space-20: 20px;
-            --space-24: 24px;
-            --space-32: 32px;
-
-            /* Border Radius */
-            --radius-sm: 6px;
-            --radius-base: 8px;
-            --radius-md: 10px;
-            --radius-lg: 12px;
-            --radius-full: 9999px;
-
-            /* Shadows */
-            --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.02);
-            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
-            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
-            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.04), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
-
-            /* Animation */
-            --duration-fast: 150ms;
-            --duration-normal: 250ms;
-            --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
-        }
-
         * {
             margin: 0;
             padding: 0;
@@ -139,329 +14,397 @@
         }
 
         body {
-            font-family: var(--font-family-base);
-            line-height: var(--line-height-normal);
-            color: var(--color-text);
-            background-color: var(--color-background);
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f7f7f7;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
         }
 
         /* Navigation */
-        .navbar {
-            background: var(--color-white);
-            box-shadow: var(--shadow-sm);
-            position: fixed;
+        nav {
+            background: linear-gradient(135deg, #FF8C42 0%, #FF6B6B 100%);
+            padding: 1rem 5%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
             top: 0;
-            width: 100%;
             z-index: 1000;
-            padding: var(--space-12) 0;
         }
 
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 var(--space-20);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-family: var(--font-family-heading);
-            font-size: var(--font-size-2xl);
-            font-weight: var(--font-weight-bold);
-            color: var(--color-primary);
-            text-decoration: none;
-        }
-
-        .nav-menu {
-            display: flex;
+        nav ul {
             list-style: none;
-            gap: var(--space-32);
-            align-items: center;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
         }
 
-        .nav-link {
+        nav a {
+            color: white;
             text-decoration: none;
-            color: var(--color-text);
-            font-weight: var(--font-weight-medium);
-            transition: color var(--duration-fast);
+            font-weight: 600;
+            transition: opacity 0.3s;
             cursor: pointer;
         }
 
-        .nav-link:hover {
-            color: var(--color-primary);
+        nav a:hover {
+            opacity: 0.8;
         }
 
-        .nav-toggle {
-            display: none;
-            background: none;
-            border: none;
-            font-size: var(--font-size-xl);
-            cursor: pointer;
-            color: var(--color-text);
-        }
-
-        /* Mobile Navigation */
-        @media (max-width: 768px) {
-            .nav-toggle {
-                display: block;
-            }
-
-            .nav-menu {
-                position: fixed;
-                top: 70px;
-                left: -100%;
-                width: 100%;
-                height: calc(100vh - 70px);
-                background: var(--color-white);
-                flex-direction: column;
-                justify-content: flex-start;
-                align-items: center;
-                transition: left var(--duration-normal);
-                padding-top: var(--space-32);
-                gap: var(--space-24);
-            }
-
-            .nav-menu.active {
-                left: 0;
-            }
-        }
-
-        /* Main Content */
-        main {
-            margin-top: 70px;
-        }
-
-        .section {
-            display: none;
-            min-height: calc(100vh - 70px);
-            padding: var(--space-32) var(--space-20);
-        }
-
-        .section.active {
-            display: block;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        /* Hero Section */
+        /* Hero Section - NOW WITH BACKGROUND IMAGE */
         .hero {
+            background: linear-gradient(rgba(78, 205, 196, 0.85), rgba(68, 160, 141, 0.85)),
+                        url('https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=1600&h=800&fit=crop') center/cover;
+            color: white;
+            padding: 5rem 5%;
             text-align: center;
-            padding: var(--space-32) 0;
-            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-orange) 100%);
-            color: var(--color-white);
-            margin: -32px -20px var(--space-32) -20px;
+            min-height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .hero h1 {
-            font-family: var(--font-family-heading);
-            font-size: clamp(2rem, 5vw, 3.5rem);
-            font-weight: var(--font-weight-bold);
-            margin-bottom: var(--space-16);
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
 
         .hero p {
-            font-size: var(--font-size-xl);
-            margin-bottom: var(--space-32);
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
         }
 
-        /* Statistics */
         .stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: var(--space-24);
-            margin: var(--space-32) 0;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
         }
 
-        .stat-card {
-            background: var(--color-white);
-            padding: var(--space-24);
-            border-radius: var(--radius-lg);
-            box-shadow: var(--shadow-sm);
+        .stat-item {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 1.5rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
         }
 
         .stat-number {
-            font-size: var(--font-size-3xl);
-            font-weight: var(--font-weight-bold);
-            color: var(--color-primary);
-            display: block;
+            font-size: 2.5rem;
+            font-weight: bold;
         }
 
-        .stat-label {
-            color: var(--color-text-secondary);
-            margin-top: var(--space-8);
+        /* Feature Flipcards Section */
+        .feature-cards-section {
+            background: white;
+            padding: 4rem 5%;
         }
 
-        /* Buttons */
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: var(--space-12) var(--space-24);
-            border-radius: var(--radius-base);
-            font-size: var(--font-size-base);
-            font-weight: var(--font-weight-medium);
-            text-decoration: none;
-            border: none;
-            cursor: pointer;
-            transition: all var(--duration-normal);
-            gap: var(--space-8);
+        .feature-cards-section h2 {
+            text-align: center;
+            color: #FF6B6B;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
         }
 
-        .btn-primary {
-            background: var(--color-primary);
-            color: var(--color-white);
-        }
-
-        .btn-primary:hover {
-            background: var(--color-primary-hover);
-            transform: translateY(-1px);
-        }
-
-        .btn-secondary {
-            background: var(--color-primary-orange);
-            color: var(--color-white);
-        }
-
-        .btn-secondary:hover {
-            background: #e67c3a;
-            transform: translateY(-1px);
-        }
-
-        .btn-outline {
-            background: transparent;
-            border: 2px solid var(--color-primary);
-            color: var(--color-primary);
-        }
-
-        .btn-outline:hover {
-            background: var(--color-primary);
-            color: var(--color-white);
-        }
-
-        /* Cards */
-        .card {
-            background: var(--color-white);
-            border-radius: var(--radius-lg);
-            box-shadow: var(--shadow-sm);
-            overflow: hidden;
-            transition: all var(--duration-normal);
-        }
-
-        .card:hover {
-            box-shadow: var(--shadow-md);
-            transform: translateY(-2px);
-        }
-
-        .card-image {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .card-content {
-            padding: var(--space-20);
-        }
-
-        .card-title {
-            font-family: var(--font-family-heading);
-            font-size: var(--font-size-lg);
-            font-weight: var(--font-weight-semibold);
-            margin-bottom: var(--space-8);
-        }
-
-        .card-text {
-            color: var(--color-text-secondary);
-            margin-bottom: var(--space-16);
-        }
-
-        /* Pet Grid */
-        .pets-grid {
+        .flipcard-container {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: var(--space-24);
-            margin-top: var(--space-24);
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
-        /* Filters */
-        .filters {
-            display: flex;
-            gap: var(--space-16);
-            margin-bottom: var(--space-24);
-            flex-wrap: wrap;
-            align-items: center;
+        .flipcard {
+            perspective: 1000px;
+            height: 350px;
+            cursor: pointer;
         }
 
-        .search-box {
-            flex: 1;
-            min-width: 200px;
-        }
-
-        .search-box input {
+        .flipcard-inner {
+            position: relative;
             width: 100%;
-            padding: var(--space-12);
-            border: 1px solid var(--color-border);
-            border-radius: var(--radius-base);
-            font-size: var(--font-size-base);
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+
+        .flipcard:hover .flipcard-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flipcard-front, .flipcard-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .flipcard-front {
+            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+            color: white;
+        }
+
+        .flipcard-front i {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .flipcard-front h3 {
+            font-size: 1.8rem;
+            text-align: center;
+        }
+
+        .flipcard-back {
+            background: white;
+            transform: rotateY(180deg);
+            border: 3px solid #4ECDC4;
+        }
+
+        .flipcard-back p {
+            text-align: center;
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .flipcard-back .btn {
+            margin-top: auto;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 5%;
+        }
+
+        /* Section */
+        section {
+            margin-bottom: 3rem;
+        }
+
+        section h2 {
+            color: #FF6B6B;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        /* Filter Section */
+        .filters {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
         }
 
         .filter-group {
-            display: flex;
-            gap: var(--space-8);
-            align-items: center;
+            margin-bottom: 1rem;
         }
 
-        .filter-select {
-            padding: var(--space-8) var(--space-12);
-            border: 1px solid var(--color-border);
-            border-radius: var(--radius-base);
-            background: var(--color-white);
+        .filter-group label {
+            font-weight: 600;
+            margin-right: 1rem;
+            color: #555;
+        }
+
+        .filter-group select, .filter-group input {
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-right: 1rem;
+        }
+
+        /* Pet Grid */
+        .pet-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .pet-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
             cursor: pointer;
         }
 
-        /* Pet Card Specific */
-        .pet-card {
-            position: relative;
+        .pet-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
         }
 
-        .pet-badge {
-            position: absolute;
-            top: var(--space-12);
-            right: var(--space-12);
-            background: var(--color-primary-orange);
-            color: var(--color-white);
-            padding: var(--space-4) var(--space-8);
-            border-radius: var(--radius-full);
-            font-size: var(--font-size-sm);
-            font-weight: var(--font-weight-medium);
+        .pet-image {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(135deg, #FFE66D 0%, #FFC93C 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
         }
 
         .pet-info {
-            display: flex;
-            justify-content: space-between;
-            align-items: start;
-            margin-bottom: var(--space-12);
+            padding: 1.5rem;
+        }
+
+        .pet-name {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #FF6B6B;
+            margin-bottom: 0.5rem;
         }
 
         .pet-details {
-            font-size: var(--font-size-sm);
-            color: var(--color-text-secondary);
+            color: #666;
+            margin-bottom: 0.5rem;
         }
 
         .pet-org {
-            background: var(--color-bg-1);
-            padding: var(--space-4) var(--space-8);
-            border-radius: var(--radius-sm);
-            font-size: var(--font-size-xs);
-            font-weight: var(--font-weight-medium);
-            color: var(--color-primary);
+            color: #4ECDC4;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background: #FF8C42;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: background 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #FF6B6B;
+        }
+
+        .btn-secondary {
+            background: #4ECDC4;
+        }
+
+        .btn-secondary:hover {
+            background: #44A08D;
+        }
+
+        /* Volunteer Cards */
+        .volunteer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .volunteer-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .volunteer-card h3 {
+            color: #FF6B6B;
+            margin-bottom: 0.5rem;
+        }
+
+        .volunteer-org {
+            color: #4ECDC4;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        /* Organization Cards */
+        .org-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .org-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .org-card h3 {
+            color: #FF6B6B;
+            margin-bottom: 1rem;
+        }
+
+        .org-card p {
+            margin-bottom: 1.5rem;
+            color: #666;
+        }
+
+        /* Business Sponsorship Section */
+        .sponsorship-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 5%;
+            margin: 3rem 0;
+        }
+
+        .sponsorship-section h2 {
+            color: white;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .sponsorship-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .sponsorship-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .sponsorship-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .sponsorship-card {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 2rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        .sponsorship-card i {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .sponsorship-card h3 {
+            margin-bottom: 1rem;
         }
 
         /* Modal */
@@ -472,833 +415,537 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0,0,0,0.7);
             z-index: 2000;
-            justify-content: center;
-            align-items: center;
-            padding: var(--space-20);
-        }
-
-        .modal.active {
-            display: flex;
+            overflow-y: auto;
         }
 
         .modal-content {
-            background: var(--color-white);
-            border-radius: var(--radius-lg);
-            max-width: 600px;
-            width: 100%;
-            max-height: 90vh;
-            overflow-y: auto;
+            background: white;
+            max-width: 800px;
+            margin: 2rem auto;
+            border-radius: 10px;
+            padding: 2rem;
             position: relative;
         }
 
-        .modal-header {
-            padding: var(--space-24);
-            border-bottom: 1px solid var(--color-border);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .modal-close {
-            background: none;
-            border: none;
-            font-size: var(--font-size-xl);
+        .close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 2rem;
             cursor: pointer;
-            color: var(--color-text-secondary);
+            color: #999;
         }
 
-        .modal-body {
-            padding: var(--space-24);
+        .close:hover {
+            color: #333;
         }
 
-        .modal-image {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            border-radius: var(--radius-base);
-            margin-bottom: var(--space-20);
-        }
-
-        /* Form Styles */
-        .form-group {
-            margin-bottom: var(--space-20);
-        }
-
-        .form-label {
-            display: block;
-            margin-bottom: var(--space-8);
-            font-weight: var(--font-weight-medium);
-            color: var(--color-text);
-        }
-
-        .form-input {
-            width: 100%;
-            padding: var(--space-12);
-            border: 1px solid var(--color-border);
-            border-radius: var(--radius-base);
-            font-size: var(--font-size-base);
-        }
-
-        .form-input:focus {
-            outline: none;
-            border-color: var(--color-primary);
-            box-shadow: 0 0 0 3px rgba(78, 205, 196, 0.1);
-        }
-
-        /* Volunteer Cards */
-        .volunteer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: var(--space-24);
-            margin-top: var(--space-24);
-        }
-
-        .volunteer-card {
-            background: var(--color-white);
-            padding: var(--space-24);
-            border-radius: var(--radius-lg);
-            box-shadow: var(--shadow-sm);
-            border-left: 4px solid var(--color-primary);
-        }
-
-        .volunteer-org {
-            color: var(--color-primary);
-            font-weight: var(--font-weight-semibold);
-            margin-bottom: var(--space-8);
-        }
-
-        .volunteer-role {
-            font-size: var(--font-size-lg);
-            font-weight: var(--font-weight-semibold);
-            margin-bottom: var(--space-12);
-        }
-
-        .volunteer-details {
-            display: flex;
-            gap: var(--space-16);
-            margin-bottom: var(--space-16);
-            font-size: var(--font-size-sm);
-            color: var(--color-text-secondary);
-        }
-
-        /* Organization Cards */
-        .org-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: var(--space-24);
-            margin-top: var(--space-24);
-        }
-
-        .org-card {
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
             text-align: center;
-            padding: var(--space-32) var(--space-24);
+            padding: 2rem;
+            margin-top: 3rem;
         }
 
-        .org-logo {
-            width: 80px;
-            height: 80px;
-            background: var(--color-bg-2);
-            border-radius: var(--radius-full);
-            margin: 0 auto var(--space-16);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: var(--font-size-2xl);
-            color: var(--color-primary);
-        }
-
-        .org-name {
-            font-weight: var(--font-weight-semibold);
-            margin-bottom: var(--space-8);
-        }
-
-        .org-mission {
-            color: var(--color-text-secondary);
-            margin-bottom: var(--space-20);
-            font-size: var(--font-size-sm);
-        }
-
-        /* About Section */
-        .about-content {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .how-it-works {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: var(--space-32);
-            margin: var(--space-32) 0;
-        }
-
-        .step {
-            text-align: center;
-        }
-
-        .step-icon {
-            width: 60px;
-            height: 60px;
-            background: var(--color-primary);
-            color: var(--color-white);
-            border-radius: var(--radius-full);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto var(--space-16);
-            font-size: var(--font-size-xl);
-        }
-
-        .step-title {
-            font-weight: var(--font-weight-semibold);
-            margin-bottom: var(--space-8);
-        }
-
-        /* Responsive Design */
+        /* Responsive */
         @media (max-width: 768px) {
-            .filters {
-                flex-direction: column;
-                align-items: stretch;
+            .hero h1 {
+                font-size: 2rem;
             }
 
-            .search-box {
-                min-width: auto;
-            }
-
-            .pets-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .hero {
-                padding: var(--space-24) var(--space-16);
+            .hero p {
+                font-size: 1.1rem;
             }
 
             .stats {
-                grid-template-columns: 1fr;
+                flex-direction: column;
+                gap: 1rem;
             }
 
-            .modal-content {
-                margin: var(--space-20);
+            nav ul {
+                gap: 1rem;
+            }
+
+            .flipcard-container {
+                grid-template-columns: 1fr;
             }
         }
 
-        /* Utility Classes */
-        .text-center { text-align: center; }
-        .mb-16 { margin-bottom: var(--space-16); }
-        .mb-24 { margin-bottom: var(--space-24); }
-        .mt-32 { margin-top: var(--space-32); }
-        .hidden { display: none; }
+        .hidden {
+            display: none !important;
+        }
     </style>
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">🐾 PawsConnect HK</a>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#" class="nav-link" data-section="home">Home</a></li>
-                <li><a href="#" class="nav-link" data-section="browse">Browse Pets</a></li>
-                <li><a href="#" class="nav-link" data-section="volunteer">Volunteer</a></li>
-                <li><a href="#" class="nav-link" data-section="donate">Donate</a></li>
-                <li><a href="#" class="nav-link" data-section="about">About</a></li>
-            </ul>
-            <button class="nav-toggle" id="nav-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
+    <nav>
+        <ul>
+            <li><a onclick="showPage('home')">Home</a></li>
+            <li><a onclick="showPage('browse')">Browse Pets</a></li>
+            <li><a onclick="showPage('volunteer')">Volunteer</a></li>
+            <li><a onclick="showPage('donate')">Donate</a></li>
+            <li><a onclick="showPage('sponsorship')">Business Sponsorship</a></li>
+            <li><a onclick="showPage('about')">About</a></li>
+        </ul>
     </nav>
 
-    <main>
-        <!-- Home Section -->
-        <section id="home" class="section active">
-            <div class="hero">
-                <div class="container">
-                    <h1>PawsConnect HK</h1>
-                    <p>Connecting Hong Kong Pets with Loving Homes</p>
-                    <p>Your gateway to finding the perfect companion or making a difference in an animal's life</p>
-                    <a href="#" class="btn btn-secondary" data-section="browse">Browse Pets</a>
+    <!-- HOME PAGE -->
+    <div id="home" class="page">
+        <!-- Hero Section with Real Photo Background -->
+        <div class="hero">
+            <h1><i class="fas fa-paw"></i> PawsConnect HK</h1>
+            <p>Connecting Hong Kong Pets with Loving Homes</p>
+            <button class="btn" onclick="showPage('browse')">Find Your New Best Friend</button>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div>Pets Available</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">25+</div>
+                    <div>Partner Organizations</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">1,200+</div>
+                    <div>Active Volunteers</div>
                 </div>
             </div>
-            
-            <div class="container">
-                <div class="stats">
-                    <div class="stat-card">
-                        <span class="stat-number">500+</span>
-                        <div class="stat-label">Pets Available</div>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">25+</span>
-                        <div class="stat-label">Partner Organizations</div>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">1,200+</span>
-                        <div class="stat-label">Volunteers</div>
-                    </div>
-                </div>
+        </div>
 
-                <div class="text-center mt-32">
-                    <h2 class="mb-16">Our Mission</h2>
-                    <p class="mb-24">PawsConnect HK is dedicated to connecting abandoned and rescued animals across Hong Kong with loving families. We work with trusted rescue organizations to provide a centralized platform that makes pet adoption easier, more transparent, and more successful for both pets and families.</p>
-                    <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                        <a href="#" class="btn btn-primary" data-section="browse">Find Your Pet</a>
-                        <a href="#" class="btn btn-outline" data-section="volunteer">Get Involved</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- Feature Flipcards Section -->
+        <div class="feature-cards-section">
+            <h2>Explore PawsConnect HK</h2>
 
-        <!-- Browse Pets Section -->
-        <section id="browse" class="section">
-            <div class="container">
-                <h1 class="text-center mb-24">Browse Available Pets</h1>
-                
-                <div class="filters">
-                    <div class="search-box">
-                        <input type="text" id="pet-search" placeholder="Search pets by name...">
-                    </div>
-                    <div class="filter-group">
-                        <label>Species:</label>
-                        <select id="species-filter" class="filter-select">
-                            <option value="">All Species</option>
-                            <option value="Dog">Dogs</option>
-                            <option value="Cat">Cats</option>
-                        </select>
-                    </div>
-                    <div class="filter-group">
-                        <label>Size:</label>
-                        <select id="size-filter" class="filter-select">
-                            <option value="">All Sizes</option>
-                            <option value="Small">Small</option>
-                            <option value="Medium">Medium</option>
-                            <option value="Large">Large</option>
-                        </select>
-                    </div>
-                    <div class="filter-group">
-                        <label>Location:</label>
-                        <select id="location-filter" class="filter-select">
-                            <option value="">All Locations</option>
-                            <option value="Hong Kong Island">Hong Kong Island</option>
-                            <option value="Kowloon">Kowloon</option>
-                            <option value="New Territories">New Territories</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div id="pets-container" class="pets-grid">
-                    <!-- Pet cards will be dynamically generated here -->
-                </div>
-            </div>
-        </section>
-
-        <!-- Volunteer Section -->
-        <section id="volunteer" class="section">
-            <div class="container">
-                <h1 class="text-center mb-24">Volunteer Opportunities</h1>
-                <p class="text-center mb-24">Make a difference in the lives of animals across Hong Kong. Join our community of dedicated volunteers.</p>
-                
-                <div class="filters mb-24">
-                    <div class="filter-group">
-                        <label>Organization:</label>
-                        <select id="org-filter" class="filter-select">
-                            <option value="">All Organizations</option>
-                            <option value="SPCA">SPCA</option>
-                            <option value="HKDR">Hong Kong Dog Rescue</option>
-                            <option value="LAP">LAP</option>
-                            <option value="Hong Kong Paws">Hong Kong Paws Foundation</option>
-                        </select>
-                    </div>
-                    <div class="filter-group">
-                        <label>Time Commitment:</label>
-                        <select id="time-filter" class="filter-select">
-                            <option value="">All Time Commitments</option>
-                            <option value="2-3 hours/week">2-3 hours/week</option>
-                            <option value="3-4 hours/week">3-4 hours/week</option>
-                            <option value="Flexible">Flexible</option>
-                            <option value="Ongoing">Ongoing</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div id="volunteer-container" class="volunteer-grid">
-                    <!-- Volunteer opportunities will be dynamically generated here -->
-                </div>
-            </div>
-        </section>
-
-        <!-- Donate Section -->
-        <section id="donate" class="section">
-            <div class="container">
-                <h1 class="text-center mb-24">Support Our Partner Organizations</h1>
-                <p class="text-center mb-32">Your donation helps feed, shelter, and rehome animals across Hong Kong. Every contribution makes a difference.</p>
-                
-                <div class="text-center mb-32">
-                    <h3 class="mb-16">Quick Donate</h3>
-                    <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 24px;">
-                        <button class="btn btn-outline">$100 HKD</button>
-                        <button class="btn btn-outline">$250 HKD</button>
-                        <button class="btn btn-outline">$500 HKD</button>
-                        <button class="btn btn-primary">Custom Amount</button>
-                    </div>
-                    <p class="text-center" style="color: var(--color-text-secondary); font-style: italic;">"Your donation helps provide food, medical care, shelter, and love to animals in need."</p>
-                </div>
-
-                <h2 class="text-center mb-24">Featured Partner Organizations</h2>
-                <div class="org-grid">
-                    <!-- Organization cards will be dynamically generated here -->
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="section">
-            <div class="container">
-                <div class="about-content">
-                    <h1 class="mb-24">About PawsConnect HK</h1>
-                    <p class="mb-32">PawsConnect HK is Hong Kong's premier centralized platform for pet adoption, volunteering, and animal welfare support. We bridge the gap between rescue organizations and the community, making it easier than ever to find your perfect companion or contribute to animal welfare.</p>
-                    
-                    <h2 class="mb-24">How It Works</h2>
-                    <div class="how-it-works">
-                        <div class="step">
-                            <div class="step-icon">1</div>
-                            <h3 class="step-title">For Adopters</h3>
-                            <p>Browse pets from multiple rescue organizations in one place. Filter by species, size, age, and location to find your perfect match.</p>
+            <div class="flipcard-container">
+                <!-- Card 1: Browse Pets -->
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <i class="fas fa-search"></i>
+                            <h3>Browse Pets</h3>
                         </div>
-                        <div class="step">
-                            <div class="step-icon">2</div>
-                            <h3 class="step-title">For Organizations</h3>
-                            <p>Showcase your animals to a wider audience. Manage applications and connect with potential adopters efficiently.</p>
-                        </div>
-                        <div class="step">
-                            <div class="step-icon">3</div>
-                            <h3 class="step-title">For Volunteers</h3>
-                            <p>Discover volunteer opportunities across Hong Kong. Find roles that match your schedule and interests.</p>
+                        <div class="flipcard-back">
+                            <p>Search through hundreds of adoptable dogs, cats, and other animals from all major Hong Kong rescue organizations in one centralized platform.</p>
+                            <button class="btn" onclick="showPage('browse')">Start Browsing</button>
                         </div>
                     </div>
+                </div>
 
-                    <div class="mt-32">
-                        <h2 class="mb-24">Contact Us</h2>
-                        <p>📧 info@pawsconnect.hk<br>📱 +852 1234 5678<br>📍 Central, Hong Kong</p>
+                <!-- Card 2: Volunteer -->
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <i class="fas fa-hand-holding-heart"></i>
+                            <h3>Volunteer</h3>
+                        </div>
+                        <div class="flipcard-back">
+                            <p>Find meaningful volunteer opportunities with rescue organizations across Hong Kong. From dog walking to event support, make a difference today.</p>
+                            <button class="btn" onclick="showPage('volunteer')">Find Opportunities</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Donate -->
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <i class="fas fa-donate"></i>
+                            <h3>Donate</h3>
+                        </div>
+                        <div class="flipcard-back">
+                            <p>Support local animal welfare organizations with direct donations. Your contribution helps feed, shelter, and provide medical care for rescued animals.</p>
+                            <button class="btn" onclick="showPage('donate')">Support Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Business Sponsorship -->
+                <div class="flipcard">
+                    <div class="flipcard-inner">
+                        <div class="flipcard-front">
+                            <i class="fas fa-briefcase"></i>
+                            <h3>Sponsor</h3>
+                        </div>
+                        <div class="flipcard-back">
+                            <p>Companies can sponsor rescue organizations through product donations, services, or financial support. Build meaningful CSR partnerships.</p>
+                            <button class="btn" onclick="showPage('sponsorship')">Learn More</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
 
-    <!-- Pet Detail Modal -->
-    <div id="pet-modal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 id="modal-pet-name">Pet Details</h2>
-                <button class="modal-close" id="modal-close">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="modal-body">
-                <img id="modal-pet-image" class="modal-image" src="" alt="Pet Photo">
-                <div id="modal-pet-details">
-                    <!-- Pet details will be populated here -->
+        <div class="container">
+            <section>
+                <h2>Our Mission</h2>
+                <p style="text-align: center; font-size: 1.1rem; max-width: 800px; margin: 0 auto;">
+                    PawsConnect HK is the first centralized platform bringing together all Hong Kong animal rescue organizations. 
+                    We make it easy to find adoptable pets, volunteer opportunities, and support local animal welfare causes.
+                </p>
+            </section>
+        </div>
+    </div>
+
+    <!-- BROWSE PETS PAGE -->
+    <div id="browse" class="page hidden">
+        <div class="container">
+            <h2><i class="fas fa-search"></i> Browse Adoptable Pets</h2>
+
+            <div class="filters">
+                <div class="filter-group">
+                    <label>Species:</label>
+                    <select id="speciesFilter" onchange="filterPets()">
+                        <option value="all">All</option>
+                        <option value="Dog">Dogs</option>
+                        <option value="Cat">Cats</option>
+                    </select>
+
+                    <label>Size:</label>
+                    <select id="sizeFilter" onchange="filterPets()">
+                        <option value="all">All</option>
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+
+                    <label>Location:</label>
+                    <select id="locationFilter" onchange="filterPets()">
+                        <option value="all">All</option>
+                        <option value="Hong Kong Island">Hong Kong Island</option>
+                        <option value="Kowloon">Kowloon</option>
+                        <option value="New Territories">New Territories</option>
+                    </select>
                 </div>
-                <div style="margin-top: 24px;">
-                    <button class="btn btn-primary" style="margin-right: 12px;">Contact Organization</button>
-                    <button class="btn btn-outline">Save to Favorites</button>
+
+                <div class="filter-group">
+                    <label>Search:</label>
+                    <input type="text" id="searchInput" placeholder="Search by name..." onkeyup="filterPets()">
+                </div>
+            </div>
+
+            <div class="pet-grid" id="petGrid"></div>
+        </div>
+    </div>
+
+    <!-- VOLUNTEER PAGE -->
+    <div id="volunteer" class="page hidden">
+        <div class="container">
+            <h2><i class="fas fa-hand-holding-heart"></i> Volunteer Opportunities</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">Make a difference in the lives of rescued animals</p>
+            <div class="volunteer-grid" id="volunteerGrid"></div>
+        </div>
+    </div>
+
+    <!-- DONATE PAGE -->
+    <div id="donate" class="page hidden">
+        <div class="container">
+            <h2><i class="fas fa-donate"></i> Support Our Partner Organizations</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">Your donation helps feed, shelter, and rehome animals in need</p>
+            <div class="org-grid" id="orgGrid"></div>
+        </div>
+    </div>
+
+    <!-- BUSINESS SPONSORSHIP PAGE (NEW!) -->
+    <div id="sponsorship" class="page hidden">
+        <div class="sponsorship-section">
+            <h2><i class="fas fa-handshake"></i> Business Sponsorship Opportunities</h2>
+
+            <div class="sponsorship-content">
+                <p>Partner with Hong Kong's leading animal welfare organizations through meaningful corporate social responsibility initiatives. Your business can make a direct impact on rescued animals while building brand goodwill.</p>
+
+                <div class="sponsorship-options">
+                    <div class="sponsorship-card">
+                        <i class="fas fa-box"></i>
+                        <h3>Product Donations</h3>
+                        <p>Provide pet food, supplies, or utilities to rescue organizations</p>
+                    </div>
+
+                    <div class="sponsorship-card">
+                        <i class="fas fa-stethoscope"></i>
+                        <h3>Service Partnerships</h3>
+                        <p>Offer veterinary care, grooming, or transport services</p>
+                    </div>
+
+                    <div class="sponsorship-card">
+                        <i class="fas fa-dollar-sign"></i>
+                        <h3>Financial Support</h3>
+                        <p>Sponsor specific programs or general operating costs</p>
+                    </div>
+
+                    <div class="sponsorship-card">
+                        <i class="fas fa-ad"></i>
+                        <h3>Digital Advertising</h3>
+                        <p>Promote your pet-related business to engaged adopters</p>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 3rem; margin-bottom: 1rem;">Benefits of Sponsorship</h3>
+                <ul style="text-align: left; max-width: 600px; margin: 0 auto; font-size: 1.1rem; line-height: 2;">
+                    <li>Recognition on PawsConnect HK platform</li>
+                    <li>Logo featured on partner organization materials</li>
+                    <li>CSR story for marketing and PR</li>
+                    <li>Employee volunteer engagement opportunities</li>
+                    <li>Tax-deductible donations (where applicable)</li>
+                </ul>
+
+                <button class="btn" style="margin-top: 2rem; background: white; color: #667eea;" onclick="alert('Thank you for your interest! Our partnerships team will contact you at partnerships@pawsconnect.hk')">Become a Sponsor</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <h2>Current Sponsorship Opportunities</h2>
+            <div class="org-grid">
+                <div class="org-card">
+                    <i class="fas fa-utensils" style="font-size: 3rem; color: #FF8C42; margin-bottom: 1rem;"></i>
+                    <h3>Pet Food Program</h3>
+                    <p>Sponsor monthly food supplies for 100+ shelter animals. Recognition as "Feeding Partner"</p>
+                    <button class="btn btn-secondary" onclick="alert('Thank you! We will connect you with our partner organizations.')">Express Interest</button>
+                </div>
+
+                <div class="org-card">
+                    <i class="fas fa-clinic-medical" style="font-size: 3rem; color: #4ECDC4; margin-bottom: 1rem;"></i>
+                    <h3>Veterinary Services</h3>
+                    <p>Provide discounted or pro-bono vet care for rescued animals. Featured on adoption profiles</p>
+                    <button class="btn btn-secondary" onclick="alert('Thank you! We will connect you with our partner organizations.')">Express Interest</button>
+                </div>
+
+                <div class="org-card">
+                    <i class="fas fa-paw" style="font-size: 3rem; color: #FF6B6B; margin-bottom: 1rem;"></i>
+                    <h3>Adoption Event Sponsor</h3>
+                    <p>Support quarterly adoption events with booth space and promotional materials</p>
+                    <button class="btn btn-secondary" onclick="alert('Thank you! We will connect you with our partner organizations.')">Express Interest</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Volunteer Sign-up Modal -->
-    <div id="volunteer-modal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>Volunteer Sign-up</h2>
-                <button class="modal-close" onclick="closeVolunteerModal()">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form id="volunteer-form">
-                    <div class="form-group">
-                        <label class="form-label">Full Name *</label>
-                        <input type="text" class="form-input" id="volunteer-name" required>
+    <!-- ABOUT PAGE -->
+    <div id="about" class="page hidden">
+        <div class="container">
+            <h2>About PawsConnect HK</h2>
+
+            <section>
+                <h3 style="color: #4ECDC4; margin-bottom: 1rem;">How It Works</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                    <div style="text-align: center;">
+                        <i class="fas fa-search" style="font-size: 3rem; color: #FF8C42; margin-bottom: 1rem;"></i>
+                        <h4>1. Browse</h4>
+                        <p>Search through hundreds of pets from all HK rescue organizations</p>
                     </div>
-                    <div class="form-group">
-                        <label class="form-label">Email Address *</label>
-                        <input type="email" class="form-input" id="volunteer-email" required>
+                    <div style="text-align: center;">
+                        <i class="fas fa-heart" style="font-size: 3rem; color: #FF6B6B; margin-bottom: 1rem;"></i>
+                        <h4>2. Connect</h4>
+                        <p>Contact organizations directly about pets you're interested in</p>
                     </div>
-                    <div class="form-group">
-                        <label class="form-label">Phone Number *</label>
-                        <input type="tel" class="form-input" id="volunteer-phone" required>
+                    <div style="text-align: center;">
+                        <i class="fas fa-home" style="font-size: 3rem; color: #4ECDC4; margin-bottom: 1rem;"></i>
+                        <h4>3. Adopt</h4>
+                        <p>Complete the adoption process and welcome your new family member</p>
                     </div>
-                    <div class="form-group">
-                        <label class="form-label">Why do you want to volunteer?</label>
-                        <textarea class="form-input" id="volunteer-message" rows="4" placeholder="Tell us about your interest in helping animals..."></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit Application</button>
-                </form>
-            </div>
+                </div>
+            </section>
+
+            <section style="margin-top: 3rem;">
+                <h3 style="color: #4ECDC4; margin-bottom: 1rem;">Contact Us</h3>
+                <p>Email: info@pawsconnect.hk</p>
+                <p>Business Partnerships: partnerships@pawsconnect.hk</p>
+                <p>Innovation Lab Project - ECOM 7121</p>
+            </section>
         </div>
     </div>
+
+    <!-- Modal for Pet Details -->
+    <div id="petModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 PawsConnect HK - Innovation Lab #1 Prototype</p>
+        <p>Connecting rescued animals with loving homes across Hong Kong</p>
+    </footer>
 
     <script>
-        // Sample Data
-        const petsData = [
-            {
-                name: "Max", species: "Dog", breed: "Golden Retriever Mix", age: "3 years", size: "Large", gender: "Male",
-                location: "Hong Kong Island", organization: "SPCA", personality: "Friendly, energetic, loves children",
-                description: "Max is a sweet golden boy who loves playing fetch and going for long walks. He's great with kids and other dogs.",
-                requirements: "Active family, outdoor space preferred",
-                image: "https://images.unsplash.com/photo-1552053831-71594a27632d?w=400&h=300&fit=crop"
-            },
-            {
-                name: "Luna", species: "Cat", breed: "Domestic Shorthair", age: "2 years", size: "Small", gender: "Female",
-                location: "New Territories", organization: "LAP", personality: "Gentle, quiet, independent",
-                description: "Luna is a calm and affectionate cat who enjoys sunbathing and gentle petting. Perfect for quieter homes.",
-                requirements: "Indoor home, patient owner",
-                image: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=300&fit=crop"
-            },
-            {
-                name: "Charlie", species: "Dog", breed: "Corgi", age: "5 years", size: "Medium", gender: "Male",
-                location: "Kowloon", organization: "HKDR", personality: "Playful, smart, loyal",
-                description: "Charlie is an adorable corgi with a big personality. He knows basic commands and loves treats!",
-                requirements: "Regular exercise, training experience helpful",
-                image: "https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=400&h=300&fit=crop"
-            },
-            {
-                name: "Bella", species: "Cat", breed: "Persian Mix", age: "4 years", size: "Medium", gender: "Female",
-                location: "Hong Kong Island", organization: "LAP", personality: "Affectionate, calm, loves attention",
-                description: "Bella is a beautiful long-haired cat seeking a loving home. She enjoys being brushed and sitting on laps.",
-                requirements: "Regular grooming, indoor only",
-                image: "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400&h=300&fit=crop"
-            },
-            {
-                name: "Rocky", species: "Dog", breed: "Terrier Mix", age: "1 year", size: "Small", gender: "Male",
-                location: "New Territories", organization: "Sai Kung Stray Friends", personality: "Energetic, curious, friendly",
-                description: "Rocky is a young pup full of energy and love. He's learning manners and would thrive with training.",
-                requirements: "Active owner, training commitment",
-                image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&h=300&fit=crop"
-            },
-            {
-                name: "Mimi", species: "Cat", breed: "Tabby", age: "6 months", size: "Small", gender: "Female",
-                location: "Kowloon", organization: "SPCA", personality: "Playful, social, kitten energy",
-                description: "Mimi is an adorable kitten who loves playing with toys and exploring. She's ready for her forever home!",
-                requirements: "First-time cat owners welcome",
-                image: "https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?w=400&h=300&fit=crop"
-            },
-            {
-                name: "Duke", species: "Dog", breed: "Labrador", age: "7 years", size: "Large", gender: "Male",
-                location: "Hong Kong Island", organization: "Hong Kong Paws Foundation", personality: "Gentle, senior, calm",
-                description: "Duke is a sweet senior dog looking for a peaceful retirement home. He enjoys short walks and couch cuddles.",
-                requirements: "Quiet home, senior dog experience preferred",
-                image: "https://images.unsplash.com/photo-1551717743-49959800b1f6?w=400&h=300&fit=crop"
-            },
-            {
-                name: "Whiskers", species: "Cat", breed: "Siamese Mix", age: "3 years", size: "Medium", gender: "Male",
-                location: "New Territories", organization: "LAP", personality: "Vocal, affectionate, social",
-                description: "Whiskers loves to chat with his humans! He's very social and enjoys being the center of attention.",
-                requirements: "Interactive owner, indoor home",
-                image: "https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=400&h=300&fit=crop"
-            },
-            {
-                name: "Daisy", species: "Dog", breed: "Beagle", age: "4 years", size: "Medium", gender: "Female",
-                location: "Kowloon", organization: "HKDR", personality: "Friendly, food-motivated, curious",
-                description: "Daisy is a happy beagle who loves sniffing adventures and treats. She's great with families.",
-                requirements: "Secure yard, regular walks",
-                image: "https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=400&h=300&fit=crop"
-            },
-            {
-                name: "Shadow", species: "Cat", breed: "Black Domestic Shorthair", age: "5 years", size: "Medium", gender: "Male",
-                location: "Hong Kong Island", organization: "Bring Me Home", personality: "Shy, sweet once comfortable",
-                description: "Shadow is a gentle soul who needs patience. Once he trusts you, he's incredibly loving.",
-                requirements: "Quiet home, patient owner, no small children",
-                image: "https://images.unsplash.com/photo-1513245543132-31f507417b26?w=400&h=300&fit=crop"
-            },
-            {
-                name: "Buddy", species: "Dog", breed: "Shih Tzu", age: "2 years", size: "Small", gender: "Male",
-                location: "Kowloon", organization: "SPCA", personality: "Lap dog, affectionate, friendly",
-                description: "Buddy is a perfect companion dog who loves cuddles and short walks. Great for apartment living.",
-                requirements: "Indoor home, regular grooming",
-                image: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400&h=300&fit=crop"
-            },
-            {
-                name: "Coco", species: "Cat", breed: "Calico", age: "1 year", size: "Small", gender: "Female",
-                location: "New Territories", organization: "LAP", personality: "Independent, playful, sassy",
-                description: "Coco is a beautiful calico with a big personality. She plays on her terms but loves interactive toys.",
-                requirements: "Experienced cat owner preferred",
-                image: "https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=400&h=300&fit=crop"
-            }
+        // Pet data
+        const pets = [
+            {name: "Max", species: "Dog", breed: "Golden Retriever Mix", age: "3 years", size: "Large", gender: "Male", location: "Hong Kong Island", organization: "SPCA", personality: "Friendly, energetic, loves children", description: "Max is a sweet golden boy who loves playing fetch and going for long walks.", icon: "🐕"},
+            {name: "Luna", species: "Cat", breed: "Domestic Shorthair", age: "2 years", size: "Small", gender: "Female", location: "New Territories", organization: "LAP", personality: "Gentle, quiet, independent", description: "Luna is a calm and affectionate cat who enjoys sunbathing.", icon: "🐱"},
+            {name: "Charlie", species: "Dog", breed: "Corgi", age: "5 years", size: "Medium", gender: "Male", location: "Kowloon", organization: "HKDR", personality: "Playful, smart, loyal", description: "Charlie is an adorable corgi with a big personality.", icon: "🐕"},
+            {name: "Bella", species: "Cat", breed: "Persian Mix", age: "4 years", size: "Medium", gender: "Female", location: "Hong Kong Island", organization: "LAP", personality: "Affectionate, calm", description: "Bella is a beautiful long-haired cat seeking a loving home.", icon: "🐱"},
+            {name: "Rocky", species: "Dog", breed: "Terrier Mix", age: "1 year", size: "Small", gender: "Male", location: "New Territories", organization: "SKSF", personality: "Energetic, curious", description: "Rocky is a young pup full of energy and love.", icon: "🐕"},
+            {name: "Mimi", species: "Cat", breed: "Tabby", age: "6 months", size: "Small", gender: "Female", location: "Kowloon", organization: "SPCA", personality: "Playful, social", description: "Mimi is an adorable kitten who loves playing with toys.", icon: "🐱"},
+            {name: "Duke", species: "Dog", breed: "Labrador", age: "7 years", size: "Large", gender: "Male", location: "Hong Kong Island", organization: "HK Paws", personality: "Gentle, senior", description: "Duke is a sweet senior dog looking for a peaceful home.", icon: "🐕"},
+            {name: "Whiskers", species: "Cat", breed: "Siamese Mix", age: "3 years", size: "Medium", gender: "Male", location: "New Territories", organization: "LAP", personality: "Vocal, affectionate", description: "Whiskers loves to chat with his humans!", icon: "🐱"},
+            {name: "Daisy", species: "Dog", breed: "Beagle", age: "4 years", size: "Medium", gender: "Female", location: "Kowloon", organization: "HKDR", personality: "Friendly, curious", description: "Daisy is a happy beagle who loves sniffing adventures.", icon: "🐕"},
+            {name: "Shadow", species: "Cat", breed: "Black Shorthair", age: "5 years", size: "Medium", gender: "Male", location: "Hong Kong Island", organization: "Bring Me Home", personality: "Shy, sweet", description: "Shadow needs patience but is incredibly loving.", icon: "🐱"},
+            {name: "Buddy", species: "Dog", breed: "Shih Tzu", age: "2 years", size: "Small", gender: "Male", location: "Kowloon", organization: "SPCA", personality: "Lap dog, affectionate", description: "Buddy is perfect for apartment living.", icon: "🐕"},
+            {name: "Coco", species: "Cat", breed: "Calico", age: "1 year", size: "Small", gender: "Female", location: "New Territories", organization: "LAP", personality: "Independent, playful", description: "Coco has a big personality and loves toys.", icon: "🐱"}
         ];
 
-        const volunteerOpportunities = [
-            { organization: "SPCA", role: "Dog Walker", time_commitment: "2-3 hours/week", location: "Wan Chai", description: "Help exercise our shelter dogs with daily walks" },
-            { organization: "HKDR", role: "Cat Socializer", time_commitment: "3-4 hours/week", location: "Ap Lei Chau", description: "Spend time with shy cats to help them become more adoptable" },
-            { organization: "LAP", role: "Fundraising Assistant", time_commitment: "Flexible", location: "Remote/Sai Kung", description: "Help organize fundraising events and campaigns" },
-            { organization: "Hong Kong Paws", role: "Foster Volunteer", time_commitment: "Ongoing", location: "Your Home", description: "Provide temporary home for dogs awaiting adoption" },
-            { organization: "SPCA", role: "Social Media Content Creator", time_commitment: "2-3 hours/week", location: "Remote", description: "Create engaging content to promote adoptable animals" },
-            { organization: "Sai Kung Stray Friends", role: "Adoption Event Helper", time_commitment: "Weekend events", location: "Sai Kung", description: "Assist with weekend adoption events" },
-            { organization: "Bring Me Home", role: "Transport Volunteer", time_commitment: "As needed", location: "Various", description: "Help transport animals to vet appointments" },
-            { organization: "HKDR", role: "Administrative Support", time_commitment: "4-5 hours/week", location: "Remote", description: "Help with data entry and administrative tasks" }
+        const volunteers = [
+            {org: "SPCA", role: "Dog Walker", time: "2-3 hours/week", location: "Wan Chai", desc: "Help exercise shelter dogs"},
+            {org: "HKDR", role: "Cat Socializer", time: "3-4 hours/week", location: "Ap Lei Chau", desc: "Spend time with shy cats"},
+            {org: "LAP", role: "Fundraising Assistant", time: "Flexible", location: "Remote/Sai Kung", desc: "Help organize fundraising events"},
+            {org: "HK Paws", role: "Foster Volunteer", time: "Ongoing", location: "Your Home", desc: "Provide temporary home for dogs"},
+            {org: "SPCA", role: "Social Media Creator", time: "2-3 hours/week", location: "Remote", desc: "Create content for adoptable animals"},
+            {org: "SKSF", role: "Adoption Event Helper", time: "Weekends", location: "Sai Kung", desc: "Assist with adoption events"},
+            {org: "Bring Me Home", role: "Transport Volunteer", time: "As needed", location: "Various", desc: "Transport animals to vet appointments"},
+            {org: "HKDR", role: "Admin Support", time: "4-5 hours/week", location: "Remote", desc: "Help with data entry and admin tasks"}
         ];
 
         const organizations = [
-            { name: "SPCA (Society for the Prevention of Cruelty to Animals)", location: "Wan Chai, Hong Kong Island", mission: "Promoting kindness and preventing cruelty to animals since 1903", contact: "info@spca.org.hk" },
-            { name: "Hong Kong Dog Rescue (HKDR)", location: "Ap Lei Chau, Hong Kong Island", mission: "Rescuing and rehoming abandoned dogs across Hong Kong", contact: "info@hkdr.org" },
-            { name: "LAP - Lifelong Animal Protection", location: "Sai Kung, New Territories", mission: "No-kill shelter providing lifelong care for cats", contact: "info@lap.org.hk" },
-            { name: "Hong Kong Paws Foundation", location: "Kennedy Town, Hong Kong Island", mission: "Rescuing street dogs and promoting TNR programs", contact: "info@hkpaws.org" },
-            { name: "Sai Kung Stray Friends Foundation", location: "Sai Kung, New Territories", mission: "Caring for stray animals in Sai Kung area", contact: "info@sksff.org" },
-            { name: "Bring Me Home", location: "Various locations", mission: "Connecting rescued animals with forever homes", contact: "info@bringmehome.hk" }
+            {name: "SPCA", mission: "Promoting kindness and preventing cruelty to animals since 1903"},
+            {name: "Hong Kong Dog Rescue", mission: "Rescuing and rehoming abandoned dogs across Hong Kong"},
+            {name: "LAP", mission: "No-kill shelter providing lifelong care for cats"},
+            {name: "HK Paws Foundation", mission: "Rescuing street dogs and promoting TNR programs"},
+            {name: "Sai Kung Stray Friends", mission: "Caring for stray animals in Sai Kung area"},
+            {name: "Bring Me Home", mission: "Connecting rescued animals with forever homes"}
         ];
 
-        // Global state
-        let filteredPets = [...petsData];
-        let filteredVolunteers = [...volunteerOpportunities];
-
-        // Navigation functionality
-        function initNavigation() {
-            const navLinks = document.querySelectorAll('.nav-link');
-            const sections = document.querySelectorAll('.section');
-            const navToggle = document.getElementById('nav-toggle');
-            const navMenu = document.getElementById('nav-menu');
-
-            // Handle section switching
-            navLinks.forEach(link => {
-                link.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    const targetSection = link.getAttribute('data-section');
-                    
-                    // Hide all sections
-                    sections.forEach(section => section.classList.remove('active'));
-                    
-                    // Show target section
-                    document.getElementById(targetSection).classList.add('active');
-                    
-                    // Close mobile menu
-                    navMenu.classList.remove('active');
-                    
-                    // Scroll to top
-                    window.scrollTo(0, 0);
-                });
-            });
-
-            // Handle mobile menu toggle
-            navToggle.addEventListener('click', () => {
-                navMenu.classList.toggle('active');
-            });
+        // Initialize
+        function init() {
+            displayPets(pets);
+            displayVolunteers();
+            displayOrganizations();
         }
 
-        // Pet functions
-        function createPetCard(pet) {
-            return `
-                <div class="card pet-card" data-pet='${JSON.stringify(pet)}'>
-                    <div class="pet-badge">${pet.species}</div>
-                    <img src="${pet.image}" alt="${pet.name}" class="card-image">
-                    <div class="card-content">
-                        <div class="pet-info">
-                            <div>
-                                <h3 class="card-title">${pet.name}</h3>
-                                <div class="pet-details">${pet.breed} • ${pet.age} • ${pet.gender}</div>
-                            </div>
-                        </div>
+        // Display pets
+        function displayPets(petsToShow) {
+            const grid = document.getElementById('petGrid');
+            grid.innerHTML = '';
+
+            petsToShow.forEach((pet, index) => {
+                const card = document.createElement('div');
+                card.className = 'pet-card';
+                card.onclick = () => showPetDetails(index);
+                card.innerHTML = `
+                    <div class="pet-image">${pet.icon}</div>
+                    <div class="pet-info">
+                        <div class="pet-name">${pet.name}</div>
+                        <div class="pet-details">${pet.breed} • ${pet.age}</div>
+                        <div class="pet-details">${pet.size} • ${pet.gender}</div>
+                        <div class="pet-details"><i class="fas fa-map-marker-alt"></i> ${pet.location}</div>
                         <div class="pet-org">${pet.organization}</div>
-                        <div class="card-text">${pet.personality}</div>
-                        <button class="btn btn-primary" onclick="openPetModal(this)">View Details</button>
                     </div>
-                </div>
-            `;
+                `;
+                grid.appendChild(card);
+            });
         }
 
-        function renderPets() {
-            const container = document.getElementById('pets-container');
-            container.innerHTML = filteredPets.map(pet => createPetCard(pet)).join('');
-        }
-
+        // Filter pets
         function filterPets() {
-            const searchTerm = document.getElementById('pet-search').value.toLowerCase();
-            const speciesFilter = document.getElementById('species-filter').value;
-            const sizeFilter = document.getElementById('size-filter').value;
-            const locationFilter = document.getElementById('location-filter').value;
+            const species = document.getElementById('speciesFilter').value;
+            const size = document.getElementById('sizeFilter').value;
+            const location = document.getElementById('locationFilter').value;
+            const search = document.getElementById('searchInput').value.toLowerCase();
 
-            filteredPets = petsData.filter(pet => {
-                const matchesSearch = pet.name.toLowerCase().includes(searchTerm);
-                const matchesSpecies = !speciesFilter || pet.species === speciesFilter;
-                const matchesSize = !sizeFilter || pet.size === sizeFilter;
-                const matchesLocation = !locationFilter || pet.location === locationFilter;
-                
-                return matchesSearch && matchesSpecies && matchesSize && matchesLocation;
+            let filtered = pets.filter(pet => {
+                return (species === 'all' || pet.species === species) &&
+                       (size === 'all' || pet.size === size) &&
+                       (location === 'all' || pet.location === location) &&
+                       (search === '' || pet.name.toLowerCase().includes(search));
             });
 
-            renderPets();
+            displayPets(filtered);
         }
 
-        function openPetModal(button) {
-            const petCard = button.closest('.pet-card');
-            const pet = JSON.parse(petCard.getAttribute('data-pet'));
-            
-            document.getElementById('modal-pet-name').textContent = pet.name;
-            document.getElementById('modal-pet-image').src = pet.image;
-            document.getElementById('modal-pet-image').alt = pet.name;
-            
-            document.getElementById('modal-pet-details').innerHTML = `
-                <div style="margin-bottom: 20px;">
-                    <h3 style="margin-bottom: 8px;">${pet.name}</h3>
-                    <div style="color: var(--color-text-secondary); margin-bottom: 16px;">
-                        ${pet.breed} • ${pet.age} • ${pet.gender} • ${pet.size}
-                    </div>
-                    <div style="background: var(--color-bg-1); padding: 8px 12px; border-radius: 6px; display: inline-block; font-size: 12px; font-weight: 500; color: var(--color-primary); margin-bottom: 16px;">
-                        ${pet.organization} - ${pet.location}
-                    </div>
+        // Show pet details
+        function showPetDetails(index) {
+            const pet = pets[index];
+            const modal = document.getElementById('petModal');
+            const body = document.getElementById('modalBody');
+
+            body.innerHTML = `
+                <div style="text-align: center; font-size: 5rem; margin-bottom: 1rem;">${pet.icon}</div>
+                <h2 style="color: #FF6B6B; text-align: center;">${pet.name}</h2>
+                <p style="text-align: center; color: #4ECDC4; font-size: 1.2rem; margin-bottom: 2rem;">${pet.organization}</p>
+
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 2rem;">
+                    <div><strong>Breed:</strong> ${pet.breed}</div>
+                    <div><strong>Age:</strong> ${pet.age}</div>
+                    <div><strong>Size:</strong> ${pet.size}</div>
+                    <div><strong>Gender:</strong> ${pet.gender}</div>
+                    <div><strong>Location:</strong> ${pet.location}</div>
                 </div>
-                
-                <div style="margin-bottom: 20px;">
-                    <h4 style="margin-bottom: 8px;">Personality</h4>
-                    <p style="color: var(--color-text-secondary);">${pet.personality}</p>
-                </div>
-                
-                <div style="margin-bottom: 20px;">
-                    <h4 style="margin-bottom: 8px;">About ${pet.name}</h4>
-                    <p style="color: var(--color-text-secondary);">${pet.description}</p>
-                </div>
-                
-                <div style="margin-bottom: 20px;">
-                    <h4 style="margin-bottom: 8px;">Adoption Requirements</h4>
-                    <p style="color: var(--color-text-secondary);">${pet.requirements}</p>
+
+                <h3 style="color: #FF8C42; margin-top: 2rem;">Personality</h3>
+                <p>${pet.personality}</p>
+
+                <h3 style="color: #FF8C42; margin-top: 2rem;">About ${pet.name}</h3>
+                <p>${pet.description}</p>
+
+                <div style="text-align: center; margin-top: 2rem;">
+                    <button class="btn" onclick="alert('Great choice! Please contact ${pet.organization} to start the adoption process. Their contact info is available on the Donate page.')">Contact ${pet.organization}</button>
                 </div>
             `;
-            
-            document.getElementById('pet-modal').classList.add('active');
+
+            modal.style.display = 'block';
         }
 
-        function closePetModal() {
-            document.getElementById('pet-modal').classList.remove('active');
+        // Close modal
+        function closeModal() {
+            document.getElementById('petModal').style.display = 'none';
         }
 
-        // Volunteer functions
-        function createVolunteerCard(volunteer) {
-            return `
-                <div class="volunteer-card">
-                    <div class="volunteer-org">${volunteer.organization}</div>
-                    <h3 class="volunteer-role">${volunteer.role}</h3>
-                    <div class="volunteer-details">
-                        <span><i class="fas fa-clock"></i> ${volunteer.time_commitment}</span>
-                        <span><i class="fas fa-map-marker-alt"></i> ${volunteer.location}</span>
-                    </div>
-                    <p class="card-text">${volunteer.description}</p>
-                    <button class="btn btn-primary" onclick="openVolunteerModal('${volunteer.role}', '${volunteer.organization}')">Sign Up</button>
-                </div>
-            `;
-        }
-
-        function renderVolunteers() {
-            const container = document.getElementById('volunteer-container');
-            container.innerHTML = filteredVolunteers.map(vol => createVolunteerCard(vol)).join('');
-        }
-
-        function filterVolunteers() {
-            const orgFilter = document.getElementById('org-filter').value;
-            const timeFilter = document.getElementById('time-filter').value;
-
-            filteredVolunteers = volunteerOpportunities.filter(vol => {
-                const matchesOrg = !orgFilter || vol.organization === orgFilter;
-                const matchesTime = !timeFilter || vol.time_commitment === timeFilter;
-                return matchesOrg && matchesTime;
-            });
-
-            renderVolunteers();
-        }
-
-        function openVolunteerModal(role, organization) {
-            document.getElementById('volunteer-modal').classList.add('active');
-        }
-
-        function closeVolunteerModal() {
-            document.getElementById('volunteer-modal').classList.remove('active');
-        }
-
-        // Organization functions
-        function createOrganizationCard(org) {
-            const icon = org.name.includes('SPCA') ? '🏥' : 
-                        org.name.includes('Dog') ? '🐕' : 
-                        org.name.includes('LAP') ? '🐱' : 
-                        org.name.includes('Paws') ? '🐾' : 
-                        org.name.includes('Stray') ? '🏠' : '❤️';
-            
-            return `
-                <div class="card org-card">
-                    <div class="org-logo">${icon}</div>
-                    <h3 class="org-name">${org.name}</h3>
-                    <p class="org-mission">${org.mission}</p>
-                    <a href="mailto:${org.contact}" class="btn btn-secondary" target="_blank">Donate Now</a>
-                </div>
-            `;
-        }
-
-        function renderOrganizations() {
-            const container = document.querySelector('#donate .org-grid');
-            container.innerHTML = organizations.map(org => createOrganizationCard(org)).join('');
-        }
-
-        // Form handling
-        function initForms() {
-            const volunteerForm = document.getElementById('volunteer-form');
-            volunteerForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                
-                const name = document.getElementById('volunteer-name').value;
-                const email = document.getElementById('volunteer-email').value;
-                const phone = document.getElementById('volunteer-phone').value;
-                
-                if (!name || !email || !phone) {
-                    alert('Please fill in all required fields.');
-                    return;
-                }
-                
-                alert(`Thank you ${name}! Your volunteer application has been submitted. We'll contact you at ${email} soon.`);
-                volunteerForm.reset();
-                closeVolunteerModal();
+        // Display volunteers
+        function displayVolunteers() {
+            const grid = document.getElementById('volunteerGrid');
+            volunteers.forEach(vol => {
+                const card = document.createElement('div');
+                card.className = 'volunteer-card';
+                card.innerHTML = `
+                    <h3>${vol.role}</h3>
+                    <div class="volunteer-org">${vol.org}</div>
+                    <p><i class="fas fa-clock"></i> ${vol.time}</p>
+                    <p><i class="fas fa-map-marker-alt"></i> ${vol.location}</p>
+                    <p>${vol.desc}</p>
+                    <button class="btn btn-secondary" onclick="alert('Thank you for your interest! Please email volunteer@pawsconnect.hk with your preferred role and we will connect you with ${vol.org}.')">Sign Up</button>
+                `;
+                grid.appendChild(card);
             });
         }
 
-        // Modal event listeners
-        function initModals() {
-            // Pet modal close
-            document.getElementById('modal-close').addEventListener('click', closePetModal);
-            
-            // Close modal when clicking outside
-            document.getElementById('pet-modal').addEventListener('click', (e) => {
-                if (e.target.id === 'pet-modal') {
-                    closePetModal();
-                }
-            });
-            
-            document.getElementById('volunteer-modal').addEventListener('click', (e) => {
-                if (e.target.id === 'volunteer-modal') {
-                    closeVolunteerModal();
-                }
+        // Display organizations
+        function displayOrganizations() {
+            const grid = document.getElementById('orgGrid');
+            organizations.forEach(org => {
+                const card = document.createElement('div');
+                card.className = 'org-card';
+                card.innerHTML = `
+                    <h3>${org.name}</h3>
+                    <p>${org.mission}</p>
+                    <button class="btn" onclick="alert('Thank you for supporting ${org.name}! In the full version, this would redirect to their donation page.')">Donate Now</button>
+                `;
+                grid.appendChild(card);
             });
         }
 
-        // Initialize filters
-        function initFilters() {
-            document.getElementById('pet-search').addEventListener('input', filterPets);
-            document.getElementById('species-filter').addEventListener('change', filterPets);
-            document.getElementById('size-filter').addEventListener('change', filterPets);
-            document.getElementById('location-filter').addEventListener('change', filterPets);
-            
-            document.getElementById('org-filter').addEventListener('change', filterVolunteers);
-            document.getElementById('time-filter').addEventListener('change', filterVolunteers);
+        // Show page
+        function showPage(pageName) {
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.add('hidden');
+            });
+            document.getElementById(pageName).classList.remove('hidden');
+            window.scrollTo(0, 0);
         }
 
-        // Initialize everything when DOM is loaded
-        document.addEventListener('DOMContentLoaded', () => {
-            initNavigation();
-            renderPets();
-            renderVolunteers();
-            renderOrganizations();
-            initFilters();
-            initModals();
-            initForms();
-        });
+        // Close modal on outside click
+        window.onclick = function(event) {
+            const modal = document.getElementById('petModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        // Initialize on load
+        window.onload = init;
     </script>
 </body>
 </html>
